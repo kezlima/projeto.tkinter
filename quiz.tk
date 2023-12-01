@@ -1,0 +1,263 @@
+from tkinter import *
+
+class win:
+   
+ def __init__(self,won):
+
+   
+    root.geometry("2000x2200")  
+    root.title("Quiz")
+    self.label=Label(text="quiz-conhecimentos gerais",font='Times 50')
+    self.label.place(relx=0.3,rely=0.2)
+    root.configure(background='medium sea green')
+     
+    self.label = Label (root, text = "Digite seu nome para Iniciar:",font='Times 40')
+    self.label.place (relx=0.3, rely=0.4)
+ 
+    self.entrada = Entry(root,font='Times 30')
+    self.entrada.place (relx = 0.3, rely = 0.5,relwidth = 0.5,relheight=0.07)
+ 
+
+
+    self.botao = Button(root, text="Pular",font='Times 40',command=self.abrir_janela1)
+    self.botao.place (relx=0.3, rely=0.7)
+ 
+
+
+ def abrir_janela1(self):
+    root.destroy()
+
+    global roota
+    roota=Tk()
+   
+    roota.configure(background='yellow4')
+    roota.geometry("2000x2200")  
+    self.b1=Button(roota,text="Continuar",font="Times 50",command=self.abrir_janela2 )
+    self.b1.place(relx=0.4,rely=0.6)
+    self.label=Label(roota,text="Para cada resposta correta ou errada\no jogagdor é direcionado para a proxima pergunta",font='Times 40')
+    self.label.place(relx=0.2,rely=0.3)
+
+
+
+ def abrir_janela2(self):
+    #global roota
+    roota.destroy()
+    global root2
+    root2=Toplevel()
+    root2.geometry("1900x2000")
+    root2.title("perguntas")
+    root2.configure(background='pink')
+    self.label2=Label(root2,text="Qual o menor e o maior País do mundo?",font="Times 50")
+    self.label2.place(relx=0.2,rely=0.3)
+    self.b2=Button(root2,text=" A) vaticano e US",font="Times 20",activebackground='red',command=self.abrir_janela3)
+    self.b2.place(relx=0.4,rely=0.5)
+    self.b3=Button(root2,text="B) vaticano e Russia",font="Times 20",activebackground='green',command=self.abrir_janela3)
+    self.b3.place(relx=0.4,rely=0.6)
+    self.bd=Button(root2,text=" C) Canadá e Uruguai",font="Times 20",activebackground='red',command=self.abrir_janela3)
+    self.bd.place(relx=0.4,rely=0.7)
+    self.be=Button(root2,text="D) Perú e Russia",font="Times 20",activebackground='red',command=self.abrir_janela3)
+    self.be.place(relx=0.4,rely=0.8)
+
+ def abrir_janela3(self):
+   
+    root2.destroy()
+    global root3
+    root3=Toplevel()
+    root3.geometry("1900x2000")  
+    root3.configure(background='tomato3')
+    root3.title("perguntas")
+    self.label3=Label(root3,text="Quantas casas decimais tem o número pi?",font="Times 50")
+    self.label3.place(relx=0.2,rely=0.3)
+    self.b4=Button(root3,text="A) duas",font="Times 20",activebackground='red',command=self.abrir_janela4)
+    self.b4.place(relx=0.6,rely=0.5)
+    self.b5=Button(root3,text="B) infinitas",font="Times 20",activebackground='green',command=self.abrir_janela4)
+    self.b5.place(relx=0.6,rely=0.6)
+    self.bf=Button(root3,text="C) dezenas",font="Times 20",activebackground='red',command=self.abrir_janela4)
+    self.bf.place(relx=0.6,rely=0.7)
+    self.bg=Button(root3,text="D) centenas",font="Times 20",activebackground='red',command=self.abrir_janela4)
+    self.bg.place(relx=0.6,rely=0.8)
+
+ def abrir_janela4(self):
+    root3.destroy()
+    global root4
+    root4=Toplevel()
+    root4.geometry("1900x2000")  
+    root4.configure(background='orange3')
+    root4.title("perguntas")
+    self.label4=Label(root4,text="Qual o livro mais vendido a seguir à bíblia?",font="Times 50")
+    self.label4.place(relx=0.1,rely=0.3)
+    self.b5=Button(root4,text="A) Senhor dos aneis",font="Times 20",activebackground='red',command=self.abrir_janela5)
+    self. b5.place(relx=0.6,rely=0.5)
+    self. b6=Button(root4,text="B) Dom Quixote",font="Times 20",activebackground='green',command=self.abrir_janela5)
+    self. b6.place(relx=0.6,rely=0.6)
+    self. bh=Button(root4,text="C) Opequeno Príncipe",font="Times 20",activebackground='red',command=self.abrir_janela5)
+    self. bh.place(relx=0.6,rely=0.7)
+    self. bi=Button(root4,text="D) Romeu e Julieta ",font="Times 20",activebackground='red',command=self.abrir_janela5)
+    self. bi.place(relx=0.6,rely=0.8)
+
+
+ def abrir_janela5(self):
+    root4.destroy()
+    global root5
+    root5=Toplevel()
+    root5.geometry("1900x2000")
+    root5.configure(background='medium purple1')
+    root5.title("perguntas")
+    self.label5=Label(root5,text="Atualmente quantos compostos químicos\n a tabela periódica possui?",font="Times 50")
+    self.label5.place(relx=0.1,rely=0.3)
+    self.b6=Button(root5,text="A) 108",font="Times 20",activebackground='red',command=self.janela6)
+    self.b6.place(relx=0.6,rely=0.5)
+    self.b7=Button(root5,text="B) 128",font="Times 20",activebackground='red',command=self.janela6)
+    self.b7.place(relx=0.6,rely=0.6)
+    self.bj=Button(root5,text="C) 114",font="Times 20",activebackground='red',command=self.janela6)
+    self.bj.place(relx=0.6,rely=0.7)
+    self.bk=Button(root5,text="D) 118",font="Times 20",activebackground='green',command=self.janela6)
+    self.bk.place(relx=0.6,rely=0.8)
+
+  
+
+ def janela6(self):
+    root5.destroy()
+    global root1
+    root1=Tk()
+    root1.geometry("1900x2000")  
+    root1.configure(background='medium sea green')
+   
+    self.label1=Label(root1,text="Qual é o nome do filme de animação da  Disney \nque tem como protagonista uma princesa escocesa? ",font='Times 50')
+    self.label1.place(relx=0.1,rely=0.3)
+    self.bl=Button(root1,text="A) Valente",font="Times 20",activebackground='green',command=self.janela7)
+    self.bl.place(relx=0.4,rely=0.5)
+    self.bm=Button(root1,text="B) Frozen",font="Times 20",activebackground='red',command=self.janela7)
+    self.bm.place(relx=0.4,rely=0.6)
+    self. bl=Button(root1,text="C) Enrolados",font="Times 20",activebackground='red',command=self.janela7)
+    self.bl.place(relx=0.4,rely=0.7)
+    self.bm=Button(root1,text="D) Moana",font="Times 20",activebackground='red',command=self.janela7)
+    self.bm.place(relx=0.4,rely=0.8)
+
+
+
+
+ def janela7(self):
+
+    root1.destroy()
+    global  rootg
+    rootg=Tk()
+    rootg.geometry("1900x2000")  
+    rootg.configure(background='sky blue')
+   
+    self.label1=Label(rootg,text="Qual é o nome do jogador brasileiro \nque marcou o milésimo gol de sua carreira em 1969? ",font='Times 50')
+    self.label1.place(relx=0.07,rely=0.3)
+    self.bl=Button(rootg,text="A) Garrincha",font="Times 20",activebackground='red',command=self.janela8)
+    self.bl.place(relx=0.4,rely=0.5)
+    self.bm=Button(rootg,text="B) Zico",font="Times 20",activebackground='red',command=self.janela8)
+    self.bm.place(relx=0.4,rely=0.6)
+    self.bp=Button(rootg,text="C) Pelé",font="Times 20",activebackground='green',command=self.janela8)
+    self.bp.place(relx=0.4,rely=0.7)
+    self.bq=Button(rootg,text="D) Romário",font="Times 20",activebackground='red',command=self.janela8)
+    self.bq.place(relx=0.4,rely=0.8)
+
+
+
+ def janela8(self):
+    rootg.destroy()
+    global rootw
+    rootw=Tk()
+    rootw.geometry("1900x2000")  
+    rootw.configure(background='Medium Purple1')
+   
+    self.label1=Label(rootw,text="Qual é o nome do pintor holandês que cortou \na própria orelha? ",font='Times 50')
+    self.label1.place(relx=0.2,rely=0.2)
+    self.bl=Button(rootw,text="A) Vincent Van Gogh",font="Times 20",activebackground='green',command=self.janela9)
+    self.bl.place(relx=0.4,rely=0.5)
+    self.bm=Button(rootw,text="B) Rembrandt",font="Times 20",activebackground='red',command=self.janela9)
+    self.bm.place(relx=0.4,rely=0.6)
+    self.bp=Button(rootw,text="C) Johannes Vermeer",font="Times 20",activebackground='red',command=self.janela9)
+    self.bp.place(relx=0.4,rely=0.7)
+    self.bq=Button(rootw,text="D) Piet Mondrian ",font="Times 20",activebackground='red',command=self.janela9)
+    self.bq.place(relx=0.4,rely=0.8)
+
+ def janela9(self):
+    rootw.destroy()
+    global rootke
+    rootke=Tk()
+    rootke.geometry("1900x2000")  
+    rootke.configure(background='Medium Purple1')
+   
+    label1=Label(rootke,text="Qual é o nome do continente que é formado por 54 países e\n é o maior do mundo\n em área e população? ",font='Times 50')
+    label1.place(relx=0.02,rely=0.2)
+    bl=Button(rootke,text="A) Ásia",font="Times 20",activebackground='red',command=self.janela10)
+    bl.place(relx=0.4,rely=0.5)
+    bm=Button(rootke,text="B) Europa",font="Times 20",activebackground='red',command=self.janela10)
+    bm.place(relx=0.4,rely=0.6)
+    bp=Button(rootke,text="C) Àfrica",font="Times 20",activebackground='green',command=self.janela10)
+    bp.place(relx=0.4,rely=0.7)
+    bq=Button(rootke,text="D) América",font="Times 20",activebackground='red',command=self.janela10)
+    bq.place(relx=0.4,rely=0.8)
+
+ def janela10(self):
+    rootke.destroy()
+    global rootz
+    rootz=Tk()
+    rootz.geometry("1900x2000")  
+    rootz.configure(background='Medium Purple1')
+   
+    self.label1=Label(rootz,text="Qual é o nome do imperador Romano que foi apunhalado\n por vários senadores no ano 44 a.c.? ",font='Times 50')
+    self.label1.place(relx=0.02,rely=0.2)
+    self.bl=Button(rootz,text="A) Augusto",font="Times 20",activebackground='red',command=self.janela11)
+    self.bl.place(relx=0.4,rely=0.5)
+    self.bm=Button(rootz,text="B) Constantino",font="Times 20",activebackground='red',command=self.janela11)
+    self.bm.place(relx=0.4,rely=0.6)
+    self.bp=Button(rootz,text="C) Júlio César",font="Times 20",activebackground='green',command=self.janela11)
+    self.bp.place(relx=0.4,rely=0.7)
+    self.bq=Button(rootz,text="D) Nero",font="Times 20",activebackground='red',command=self.janela11)
+    self.bq.place(relx=0.4,rely=0.8)
+       
+
+ def janela11(self):
+    rootz.destroy()
+    global rooty
+    rooty=Tk()
+    rooty.geometry("1900x2000")  
+    rooty.configure(background='Medium Purple1')
+   
+    self.label1=Label(rooty,text="Normalmente, quantos litros de sangue uma pessoa tem? \nE em média, quantos são retirados numa doação de sangue?",font='Times 40')
+    self.label1.place(relx=0.05,rely=0.2)
+    self.b=Button(rooty,text="A) Tem entre 2 a 4 litros. São retirados 450 mililitros ",font="Times 20",activebackground='red',command=self.janela12)
+    self.b.place(relx=0.4,rely=0.5)
+    self.br=Button(rooty,text="B) Tem 0,5 litros. São retirados 0,5 litros ",font="Times 20",activebackground='red',command=self.janela12)
+    self.br.place(relx=0.4,rely=0.6)
+    self.bs=Button(rooty,text="C) Tem entre 4 a 6 litros. São retirados 450 mililitros ",font="Times 20",activebackground='green',command=self.janela12)
+    self.bs.place(relx=0.4,rely=0.7)
+    self.bt=Button(rooty,text="D) Tem 10 litros. São retirados 2 litros ",font="Times 20",activebackground='red',command=self.janela12)
+    self.bt.place(relx=0.4,rely=0.8)
+ 
+
+ def janela12(self):
+    rooty.destroy()
+    global rootx
+    rootx=Tk()
+    rootx.geometry("1900x2000")  
+    rootx.configure(background='Medium Purple1')
+   
+    self.label1=Label(rootx,text=" Obrigado! Esse foi o  Quiz.  \n Alunos:\nKezya,Luiz,Fernanda e Yasmin",font='Times 40')
+    self.label1.place(relx=0.2,rely=0.2)
+    self.butãoSair=Button(rootx,text='Sair',font='Times 20',command=self.sair)
+    self.butãoSair.place(relx=0.7,rely=0.7)
+   
+
+ def sair(self):
+     rootx.destroy()
+   
+
+root=Tk()
+f1=win(root)
+
+root.mainloop()
+
+
+
+
+
+
+
+
