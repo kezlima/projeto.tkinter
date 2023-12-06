@@ -110,7 +110,7 @@ class win:
     root5.geometry("2000x2000")
     root5.configure(background='medium purple1')
     root5.title("Pergunta 4 de 10")
-    self.label5=Label(root5,text="Atualmente quantos compostos químicos\n a tabela periódica possui?",font="System 50")
+    self.label5=Label(root5,text="Atualmente quantos compostos químicos\n a tabela periódica possui?",font="System 38")
     self.label5.place(relx=0.1,rely=0.3)
     self.b6=Button(root5,text="A) 108",font="System 20",activebackground='red',command=self.janela6)
     self.b6.place(relx=0.4,rely=0.5)
@@ -132,7 +132,7 @@ class win:
     root1.geometry("2000x2000")  
     root1.configure(background='medium sea green')
    
-    self.label1=Label(root1,text="Qual é o nome do filme de animação da Disney\nque tem como protagonista\n uma princesa escocesa?",font="System 40")
+    self.label1=Label(root1,text="Qual é o nome do filme de animação\n da Disney\nque tem como protagonista\n uma princesa escocesa?",font="System 37")
     self.label1.place(relx=0.1,rely=0.1)
     self.bl=Button(root1,text="A) Valente",font="System 20",activebackground='green',command=self.janela7)
     self.bl.place(relx=0.4,rely=0.5)
@@ -174,7 +174,7 @@ class win:
     rootw.geometry("2000x2000")  
     rootw.configure(background='Medium Purple1')
    
-    self.label1=Label(rootw,text="Qual é o nome do pintor\n holandês que cortou\na própria orelha? ",font='System 50')
+    self.label1=Label(rootw,text="Qual é o nome do pintor\n holandês que cortou\na própria orelha? ",font='System 40')
     self.label1.place(relx=0.2,rely=0.2)
     self.bl=Button(rootw,text="A) Vincent Van Gogh",font="System 20",activebackground='green',command=self.janela9)
     self.bl.place(relx=0.4,rely=0.5)
@@ -192,7 +192,7 @@ class win:
     rootke.geometry("2000x2000")  
     rootke.configure(background='Medium Purple1')
    
-    label1=Label(rootke,text="Qual é o nome do continente que é\n formado por 54 países e é o maior do mundo\n em área e população? ",font='System 40')
+    label1=Label(rootke,text="Qual é o nome do continente que é\n formado por 54 países e é o maior do mundo\n em área e população? ",font='System 38')
     label1.place(relx=0.02,rely=0.2)
     bl=Button(rootke,text="A) Ásia",font="System 20",activebackground='red',command=self.janela10)
     bl.place(relx=0.4,rely=0.5)
@@ -210,7 +210,7 @@ class win:
     rootz.geometry("2000x2000")  
     rootz.configure(background='Medium Purple1')
    
-    self.label1=Label(rootz,text="Qual é o nome do imperador Romano\n que foi apunhalado por vários senadores no ano 44 a.c.? ",font='System 40')
+    self.label1=Label(rootz,text="Qual é o nome do imperador Romano\n que foi apunhalado por vários senadores no\n ano 44 a.c.? ",font='System 38')
     self.label1.place(relx=0.02,rely=0.2)
     self.bl=Button(rootz,text="A) Augusto",font="System 20",activebackground='red',command=self.janela11)
     self.bl.place(relx=0.4,rely=0.5)
@@ -229,8 +229,8 @@ class win:
     rooty.geometry("2000x2000")  
     rooty.configure(background='Medium Purple1')
    
-    self.label1=Label(rooty,text="Normalmente, quantos litros de sangue uma pessoa tem?\nE em média, quantos são retirados\n numa doação de sangue?",font='System 40')
-    self.label1.place(relx=0.05,rely=0.2)
+    self.label1=Label(rooty,text="Normalmente, quantos litros\n de sangue uma pessoa tem?\nE em média, quantos são retirados\n numa doação de sangue?",font='System 37')
+    self.label1.place(relx=0.05,rely=0.1)
     self.b=Button(rooty,text="A) Tem entre 2 a 4 litros. São retirados 450 mililitros ",font="System 20",activebackground='red',command=self.janela12)
     self.b.place(relx=0.4,rely=0.5)
     self.br=Button(rooty,text="B) Tem 0,5 litros. São retirados 0,5 litros ",font="System 20",activebackground='red',command=self.janela12)
