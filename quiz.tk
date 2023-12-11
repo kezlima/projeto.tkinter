@@ -153,7 +153,7 @@ class win:
     rootg.configure(background='sky blue')
    
     self.label1=Label(rootg,text="Qual é o nome do jogador brasileiro\nque marcou o milésimo gol\n de sua carreira em 1969? ",font='System 40')
-    self.label1.place(relx=0.07,rely=0.1)
+    self.label1.place(relx=0.1,rely=0.1)
     self.bl=Button(rootg,text="A) Garrincha",font="System 20",activebackground='red',command=self.janela8)
     self.bl.place(relx=0.4,rely=0.5)
     self.bm=Button(rootg,text="B) Zico",font="System 20",activebackground='red',command=self.janela8)
@@ -191,7 +191,7 @@ class win:
     rootke.configure(background='Medium Purple1')
    
     label1=Label(rootke,text="Qual é o nome do continente\n que é formado por 54 países e\n é o maior do mundo\n em área e população? ",font='System 37')
-    label1.place(relx=0.02,rely=0.1)
+    label1.place(relx=0.1,rely=0.1)
     bl=Button(rootke,text="A) Ásia",font="System 20",activebackground='red',command=self.janela10)
     bl.place(relx=0.4,rely=0.5)
     bm=Button(rootke,text="B) Europa",font="System 20",activebackground='red',command=self.janela10)
@@ -228,7 +228,7 @@ class win:
     rooty.configure(background='Medium Purple1')
    
     self.label1=Label(rooty,text="Normalmente, quantos litros\n de sangue uma pessoa tem? \nE em média, quantos são retirados numa\n doação de sangue?",font='System 37')
-    self.label1.place(relx=0.05,rely=0.2)
+    self.label1.place(relx=0.05,rely=0.1)
     self.b=Button(rooty,text="A) Tem entre 2 a 4 litros. São retirados 450 mililitros ",font="System 20",activebackground='red',command=self.janela12)
     self.b.place(relx=0.4,rely=0.5)
     self.br=Button(rooty,text="B) Tem 0,5 litros. São retirados 0,5 litros ",font="System 20",activebackground='red',command=self.janela12)
